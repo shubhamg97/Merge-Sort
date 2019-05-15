@@ -26,7 +26,10 @@ def merge(leftHalf, rightHalf, array):
   print(array)
 
 def mergeSort(array):
-  if len(array) > 1:
+  if len(array) < 2:
+    return array
+
+  else:
     midPoint = (len(array))//2
     leftHalf = array[:midPoint]
     rightHalf = array[midPoint:]
@@ -46,4 +49,4 @@ mergeSort(array3)
 array4 = [5, 9, 7, 43, 6, 3, 1, 2]
 mergeSort(array4)
 array5 = [1, 5, 9, 7, 6, 9, 3, 1, 2, 5, 6]
-mergeSort(array5)
+print(mergeSort(array5))
