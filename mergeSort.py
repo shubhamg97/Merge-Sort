@@ -41,12 +41,12 @@ def mergeSort(array):
     merge(leftHalf, rightHalf, array)
 
 array1 = [5, 9, 7, 6, 3, 1, 2]
-mergeSort(array1)
+print(mergeSort(array1))
 array2 = [5]
-mergeSort(array2)
+print(mergeSort(array2))
 array3 = [5, 9, 8, 3, 7, 6, 3, 1, 2]
-mergeSort(array3)
+print(mergeSort(array3))
 array4 = [5, 9, 7, 43, 6, 3, 1, 2]
-mergeSort(array4)
+print(mergeSort(array4))
 array5 = [1, 5, 9, 7, 6, 9, 3, 1, 2, 5, 6]
 print(mergeSort(array5))
